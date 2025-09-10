@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Momentus</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar include -->
+  <div id="navbar"></div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-page">
+    <h1>Our Gallery</h1>
+    <div class="gallery-images">
+      <img src="gallery/1.jpeg" alt="Wedding 1">
+      <img src="gallery/2.jpeg" alt="Wedding 2">
+      <img src="gallery/3.jpeg" alt="Wedding 3">
+      <img src="gallery/4.jpeg" alt="Wedding 4">
+      <img src="gallery/5.jpeg" alt="Event 1">
+      <img src="gallery/6.jpeg" alt="Event 1">
+      <img src="gallery/7.jpeg" alt="Event 1">
+      <img src="gallery/8.jpeg" alt="Event 1">
+      <img src="gallery/9.jpeg" alt="Event 1">
+      <img src="gallery/10.jpeg" alt="Event 1">
+      <img src="gallery/11.jpeg" alt="Event 1">
+      <img src="gallery/12.jpeg" alt="Event 1">
+      <img src="gallery/13.jpeg" alt="Event 1">
+      <img src="gallery/14.jpeg" alt="Event 1">
+      <img src="gallery/15.jpeg" alt="Event 1">
+      <img src="gallery/16.jpeg" alt="Event 1">
+      <img src="gallery/17.jpeg" alt="Event 1">
+      <img src="gallery/18.jpeg" alt="Event 1">
+      <img src="gallery/19.jpeg" alt="Event 1">
+      <img src="gallery/20.jpeg" alt="Event 1">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h2 class="company-name">momentus</h2>
+      <p>Momentus Event Management is an ISO 9001:2015 certified event management company</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@company.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-line">
+        <span class="left">📞 +91 9876543210</span>
+        <span class="right">✉ info@momentus.com</span>
+      </div>
+      <div class="footer-line trademark">
+        © 2025 Momentus. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navbar Load Script -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

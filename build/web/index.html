@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentus Event Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <div class="slideshow-container">
+  <div class="slideshow">
+    <div class="slide" style="background-image: url('image/background1.jpg');"></div>
+    <div class="slide" style="background-image: url('image/background2.jpg');"></div>
+    <div class="slide" style="background-image: url('image/background3.jpg');"></div>
+    <div class="slide" style="background-image: url('image/background4.jpg');"></div>
+    <div class="slide" style="background-image: url('image/background5.jpg');"></div>
+  </div>
+</div>
+
+
+  <div class="hero-content">
+  <h1>Partner with Momentus Event Management in India</h1>
+  <p>At Excellence Event Company</p>
+  
+  <div class="cta">
+    <a href="#contact" class="btn">Contact Us</a>
+    <div class="review">
+      <span class="rating">⭐ 4.8/5</span>
+      <div class="avatars">
+        <img src="image/wedding1.jpg" alt="User 1">
+        <img src="image/wedding2.jpg" alt="User 2">
+        <img src="image/weddding3.jpg" alt="User 3">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="images">
+      <img src="image/wedding1.jpg" alt="">
+      <img src="image/wedding2.jpg" alt="">
+      <img src="image/weddding3.jpg" alt="">
+      <img src="image/wedding4.jpg" alt="">
+    </div>
+    <div class="info-box">
+      <h3>UNLOCK YOUR DREAM DESTINATION WEDDING</h3>
+      <p>Choose Momentus Event Management company for exceptional planning and unforgettable celebration we deliver top-quality services ensuring stress-free and memorable events.</p>
+      <a href="#" class="whatsapp"> <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" 
+     alt="WhatsApp Logo" 
+     style="filter: brightness(0) invert(1);">
+
+</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>OUR SERVICES</h2>
+    <h3>Services by Momentus Event Management</h3>
+    <p>Momentus Event Management is an ISO 9001:2015 certified event management company providing incredible wedding planning services, destination weddings, private parties, corporate events, beach weddings, and entertainment shows. We ensure world-class management with creativity and perfection.</p>
+    
+    <div class="card-container">
+  <div class="card">
+    <img src="image/corporate-event.jpg" alt="">
+    <div class="text-overlay">Corporate Event</div>
+  </div>
+  <div class="card">
+    <img src="image/event1.jpg" alt="Wedding Planners">
+    <p>Wedding Planners</p>
+  </div>
+  <div class="card">
+    <img src="image/wedding4.jpg" alt="Destination Weddings">
+    <p>Destination Weddings</p>
+  </div>
+  <div class="card">
+    <img src="image/beach.jpg" alt="Beach Weddings">
+    <p>Beach Weddings</p>
+  </div>
+  <div class="card">
+    <img src="image/party.jpg" alt="Music & Entertainments">
+    <p>Music & Entertainments</p>
+  </div>
+  <div class="card">
+    <img src="image/party2.jpg" alt="Private Parties">
+    <p>Private Parties</p>
+  </div>
+</div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h2 class="company-name">momentus</h2>
+    <p>Momentus Event Management is an ISO 9001:2015 certified event management company</p>
+    
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:info@company.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    
+    <div class="footer-line">
+      <span class="left">📞 +91 9876543210</span>
+      <span class="right">✉ info@momentus.com</span>
+    </div>
+
+    <div class="footer-line trademark">
+      © 2025 Momentus. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+  
+  
+<div id="popupOverlay">
+  <div id="contactPopup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    
+    <form id="contactForm" action="https://formspree.io/f/xwpnweeb" method="POST">
+      <h2>Contact Us</h2>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="successMessage">
+      <div class="checkmark"></div>
+      <h3>Thanks for contacting us!</h3>
+      <p>We’ll get back to you soon 😊</p>
+    </div>
+  </div>
+</div>
+  
+  
+  <script>
+function openPopup() {
+  document.getElementById("popupOverlay").style.display = "flex";
+  document.getElementById("contactPopup").style.display = "block";
+  document.getElementById("contactForm").style.display = "block";
+  document.getElementById("successMessage").style.display = "none";
+}
+
+function closePopup() {
+  document.getElementById("popupOverlay").style.display = "none";
+}
+
+// Form submit handler
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // normal submit रोकना
+  const form = e.target;
+
+  // fetch से भेजना
+  let res = await fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (res.ok) {
+    form.reset();
+    form.style.display = "none";
+    document.getElementById("successMessage").style.display = "block";
+  } else {
+    alert("Error! Please try again.");
+  }
+});
+</script>
+
+  
+  
+  
+
+  
+  
+  
+  
+<script src="script.js"></script>
+
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+
+</body>
+</html>
